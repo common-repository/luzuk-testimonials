@@ -1,0 +1,259 @@
+.testi-tab-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 340px;
+    margin: 4px 15px;
+    border-radius: 5px;
+    background: #f4f4f5;
+    box-shadow: 8px 8px 16px #f0f0f1, -8px -8px 16px #ffffff;
+}
+.testi-tab-row .testi-tab-col{
+	box-sizing: border-box;
+}
+.testi-tab-row .testi-tab-col1{
+    width: 21%;
+    flex: 0 0 21%;
+    padding: 0 12px;
+    margin: 0 0px;
+}
+.testi-tab-row .testi-tab-col2{
+	width: 79%;
+	flex: 0 0 79%;
+}
+.testi-admin-tab li{
+	display: block;	
+	cursor: pointer;
+	background-color: #e2e2e2;
+	padding: 10px 12px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 3px;
+}
+.testi-admin-tab li.active{
+	background-color: #007cba;
+	color: #fff;
+	position: relative;
+}
+.testi-tab-content-wrap{
+	display: none;
+}
+.testi-tab-content-wrap.active{
+	display: block;
+}
+.testi-admin-tab li.active::after{
+	content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #007cba;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -14px;
+    top: 11px;
+}
+.testi-tab-content-wrap{
+	padding: 16px 50px 50px 50px;
+}
+.testi-tab-content-wrap label{
+	font-size: 16px;
+    font-weight: 600;
+    display: block;
+    width: 36%;
+}
+.lt-input-field{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 13px;
+}
+.lt-input-field .wp-picker-container{
+	position: relative;
+    top: -7px;
+    padding-left: 19px;
+}
+.lt-input-field .wp-picker-input-wrap label{
+	display: none !important;
+}
+.lt-input-field input {
+    margin-left: 19px;
+}
+.lt-input-field input.numbbox {
+    border: 1px solid #017cba;
+    border-radius: 0px;
+    margin-right: 0;
+    width: 34px;
+    text-align: center;
+}
+.hw-size span {
+    background: #027cba;
+    margin: 0;
+    padding: 6px 0px;
+    left: 0;
+    text-align: center;
+    width: 23px;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    line-height: 13px;
+}
+.lt-input-field input.numbfield {
+    width: 40px;
+    -moz-appearance: textfield;
+    position: relative;
+    -webkit-appearance: none;
+}
+input.numbfield::-webkit-outer-spin-button,
+input.numbfield::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.lt-input-field input.numbbox::-webkit-outer-spin-button,
+.lt-input-field input.numbbox::-webkit-inner-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+
+input.numbfield[type=number] {
+  -moz-appearance: textfield;
+}
+input#radio-one, input#radio-two {
+    display: none;
+}
+.switch-field {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin-left: 19px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background: #027cba;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    background: #027cba;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    height: 12px;
+    width: 12px;
+    background: #027cba;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+.switch-field .radioone{
+    position: absolute !important;
+    /* clip: rect(0, 0, 0, 0); */
+    height: 33px;
+    width: 51px;
+    margin-top: 0px;
+    border: 0;
+	background: transparent;
+    content-visibility: hidden;
+    border-radius: 0;
+    /* overflow: hidden; */
+}
+.switch-field .radiotwo{
+    position: absolute !important;
+    /* clip: rect(0, 0, 0, 0); */
+    height: 33px;
+    width: 51px;
+    margin-top: 0px;
+	background: transparent;
+    content-visibility: hidden;
+    border: 0;
+    right: -3px;
+    border-radius: 0;
+    /* overflow: hidden; */
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    width: 40px;
+    padding: 8px 0px;
+    margin-right: -1px;
+    transition: all 0.1s ease-in-out;
+}
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #027cba;
+	color: #fff;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 1px 0 0 1px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 1px 1px 0;
+}
+.range-slider {
+    width: 37%;
+}
+.rangesliderrange,.rangesliderrangeh {
+    -webkit-appearance: none;
+    width: calc(65% - (87px));
+    height: 5px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.rangeslidercec,.rangeslidercech  {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #027cba;
+    padding: 5px 6px;
+    margin-left: 8px;
+}
+.rangeslidercec:after,.rangeslidercech:after {
+    position: absolute;
+    top: 9px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #027cba;
+    border-bottom: 6px solid transparent;
+    content: '';
+}
+p.submit {
+    margin-left: 15px;
+}
+.wp-color-result-text {
+    display: none;
+}
+.wp-picker-container .iris-picker {
+    position: absolute;
+    z-index: 1;
+}
+.testi-tab-content-wrap .wp-color-result.button {
+    min-height: 30px;
+    margin: 0 6px 6px 0;
+    border-radius: 50px;
+    border: 0;      
+    padding: 0 0 0 30px;
+    font-size: 11px;
+}

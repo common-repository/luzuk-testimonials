@@ -1,0 +1,29 @@
+.owl-stage{
+    margin: auto auto;
+}
+.owl-nav {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+button.owl-prev {
+    width: 3%;
+}
+button.owl-next {
+    width: 3%;
+}
+.owl-nav span {
+    font-size: 25px
+}
+.card-testimony img{
+    width: 100%;
+}
+.areacontent {
+    margin-bottom: 50px;
+}
+.content-area {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    float: left;
+}
